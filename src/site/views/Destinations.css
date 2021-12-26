@@ -1,0 +1,135 @@
+.destination-container {
+	background-position: bottom center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	background-image: url('../../../public/assets/destination/background-destination-mobile.jpg');
+	width: 100vw;
+	height: 100vh;
+}
+
+.destination-gadget {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.destination-gadget--inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 80%;
+	width: 100%;
+}
+
+.destination-header {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.destination-header h1 span {
+	color: hsl(var(--clr-white) / 0.25);
+	font-weight: 800;
+}
+
+img {
+	width: 70%;
+}
+
+.destination-body {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.destination-tabs {
+	display: flex;
+	flex-direction: row;
+}
+
+.destination-tab {
+	padding: 0 var(--gap, 1rem);
+}
+
+.show {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+}
+
+.hide {
+	display: none;
+}
+
+.destination-description {
+	width: 80%;
+	min-height: 11ch;
+}
+
+.horizontal-line {
+	width: 80%;
+	border-bottom: 1px solid hsl(var(--clr-white) / 0.25);
+	--gap: 1.2rem;
+	margin: var(--gap, 1rem) 0;
+}
+
+.destination-details {
+	/* width: 100%; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@media (min-width: 35em) {
+	.destination-container {
+		background-image: url('../../../public/assets/destination/background-destination-tablet.jpg');
+	}
+	.destination-details {
+		flex-direction: row;
+		gap: 45px;
+	}
+	.destination-details--content {
+	}
+}
+
+@media (min-width: 45em) {
+	.destination-container {
+		background-image: url('../../../public/assets/destination/background-destination-desktop.jpg');
+	}
+
+	.destination-gadget--inner {
+		flex-direction: row;
+	}
+
+	img {
+		width: 60%;
+	}
+
+	.destination-body {
+		text-align: left;
+		/* justify-content: left; */
+		align-items: flex-start;
+	}
+	/* .destination-tabs {
+		justify-content: flex-start;
+	} */
+
+	.show {
+		align-items: flex-start;
+	}
+
+	.destination-details {
+		/* align-items: flex-start; */
+	}
+}

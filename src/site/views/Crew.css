@@ -1,0 +1,130 @@
+.crew-container {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+
+	background-position: bottom center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	background-image: url('../../../public/assets/crew/background-crew-mobile.jpg');
+}
+
+.crew-container--inner {
+	display: flex;
+	flex-direction: column;
+	margin: auto 0;
+	/* align items vertically */
+	align-items: center;
+	height: 80%;
+	gap: 2rem;
+}
+
+.crew-container--title {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+.crew-container--title h1 span {
+	margin-right: 0.5em;
+	font-weight: 700;
+	color: hsl(var(--clr-white) / 0.25);
+}
+
+.crew-container--content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+}
+.crew-container--content img {
+	border-bottom: 1px solid hsl(var(--clr-white) / 0.1);
+	order: 1;
+}
+.crew-container--content .crew-container--body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	order: 2;
+}
+.crew-details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.crew-details h2 {
+	text-align: center;
+}
+.crew-details p {
+	text-align: center;
+}
+
+@media (min-width: 35em) {
+	.crew-container {
+		background-position: bottom center; /* Center the image */
+		background-repeat: no-repeat; /* Do not repeat the image */
+		background-size: cover; /* Resize the background image to cover the entire container */
+		background-image: url('../../../public/assets/crew/background-crew-tablet.jpg');
+	}
+	.crew-container--inner {
+		margin: auto 0 0 0;
+	}
+	.crew-container--title {
+		justify-content: left;
+	}
+	.crew-container--content img {
+		order: 2;
+	}
+	.crew-container--content .crew-container--body {
+		order: 1;
+	}
+
+	.crew-container--body .crew-details {
+		order: 1;
+	}
+	.crew-container--body .dot-indicators {
+		order: 2;
+	}
+}
+
+@media (min-width: 45em) {
+	.crew-container {
+		background-position: bottom center; /* Center the image */
+		background-repeat: no-repeat; /* Do not repeat the image */
+		background-size: cover; /* Resize the background image to cover the entire container */
+		background-image: url('../../../public/assets/crew/background-crew-desktop.jpg');
+	}
+	.crew-container--inner {
+		margin: auto auto 0 auto;
+	}
+	.crew-container--content {
+		flex-direction: row;
+		gap: 4rem;
+	}
+	.crew-container--content img {
+		width: 80%;
+		/* flex: 1; */
+	}
+
+	.crew-container--content .crew-container--body {
+		min-width: 48ch;
+		align-items: flex-start;
+		/* flex: 1; */
+	}
+
+	.crew-container--content .crew-container--body .crew-details p {
+		max-width: 45ch;
+		align-items: flex-start;
+		/* flex: 1; */
+	}
+
+	.crew-container--body .crew-details {
+		align-items: flex-start;
+	}
+	.crew-container--body .crew-details h2 {
+		text-align: left;
+	}
+	.crew-container--body .crew-details p {
+		text-align: left;
+	}
+}
