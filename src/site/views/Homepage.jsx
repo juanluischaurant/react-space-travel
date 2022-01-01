@@ -8,7 +8,7 @@ const Homepage = () => {
         
       <Navbar/>
 
-      <div className="flex even-columns flex-container flex-container--home">
+      <div className="flex even-columns homepage__container-inner">
         <div className="">
           <h1 className='text-accent fs-500 ff-sans-cond uppercase letter-spacing-1'>So, you want to travel to 
           <span className='fs-900 ff-serif text-white block-element'>Space</span>

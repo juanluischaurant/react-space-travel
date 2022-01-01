@@ -38,7 +38,7 @@ const Destinations = () => {
                 data.destinations.map((el, index) => {
                   return (
                     <div
-                      className='destination-tab uppercase'
+                      className={`destination-tab uppercase ${index===destinationTab?'dirty':''}`}
                       onClick={()=>setDestinationTab(index)}
                     >{el.name}</div>
                   )
@@ -50,7 +50,7 @@ const Destinations = () => {
                 return(
                   <div
                     // style={{display:}}
-                    className={index==destinationTab?'show':'hide'}
+                    className={index===destinationTab?'show':'hide'}
                   >
                     <h1 className='fs-800 ff-serif text-white uppercase'>{el.name}</h1>
                     <div className='destination-description'>{el.description}</div>

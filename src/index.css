@@ -74,11 +74,12 @@
 }
 
 /* let's eval this */
+/* deleted from homepage */
 .flex-container {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	/* height: 100vh; */
 	justify-content: center;
 	align-items: center;
 	gap: 10%;
@@ -98,11 +99,6 @@
 		align-items: center;
 		gap: 10%;
 		/* border: 5px solid limegreen; */
-	}
-
-	.flex-container--home {
-		padding-bottom: max(6rem, 20vh);
-		align-items: end;
 	}
 }
 
@@ -260,6 +256,11 @@ body {
 /* Compontents         */
 /* ------------------- */
 
+.large-button--container {
+	display: flex;
+	/* align-items: cent; */
+	justify-content: center;
+}
 .large-button {
 	display: inline-grid;
 	place-items: center;

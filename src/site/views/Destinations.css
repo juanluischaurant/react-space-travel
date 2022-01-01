@@ -21,7 +21,8 @@
 	justify-content: space-between;
 	align-items: center;
 	height: 80%;
-	width: 100%;
+	/* gap: 1em; */
+	/* width: 100%; */
 }
 
 .destination-header {
@@ -31,7 +32,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 1rem;
+	gap: 2em;
 }
 
 .destination-header h1 span {
@@ -45,20 +46,28 @@ img {
 
 .destination-body {
 	width: 100%;
+	text-align: center;
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	text-align: center;
+	gap: 0.6em;
 }
 
 .destination-tabs {
+	cursor: pointer;
 	display: flex;
 	flex-direction: row;
 }
 
 .destination-tab {
-	padding: 0 var(--gap, 1rem);
+	padding: 0 0.2rem 0.4rem 0.2rem;
+	margin: 0.5rem;
+}
+
+.dirty {
+	border-bottom: 4px solid #fff;
 }
 
 .show {
@@ -101,6 +110,10 @@ img {
 	}
 	.destination-details--content {
 	}
+
+	.destination-header img {
+		width: 50%;
+	}
 }
 
 @media (min-width: 45em) {
@@ -112,8 +125,8 @@ img {
 		flex-direction: row;
 	}
 
-	img {
-		width: 60%;
+	.destination-header img {
+		width: 72%;
 	}
 
 	.destination-body {

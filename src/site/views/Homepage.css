@@ -3,19 +3,43 @@
 	background-repeat: no-repeat; /* Do not repeat the image */
 	background-size: cover; /* Resize the background image to cover the entire container */
 	background-image: url('../../../public/assets/home/background-home-mobile.jpg');
-	width: 100vw;
+	/* width: 100vw; */
 	height: 100vh;
 }
 
-@media (min-width: 35rem) {
+.homepage__container-inner {
+	height: 100%;
+	max-width: 82vw;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 4em;
+	text-align: center;
+}
+
+@media (min-width: 35em) {
 	.homepage__container {
 		background-position: center center;
 		background-image: url('../../../public/assets/home/background-home-tablet.jpg');
 	}
 }
 
-@media (min-width: 45rem) {
+@media (min-width: 45em) {
 	.homepage__container {
 		background-image: url('../../../public/assets/home/background-home-desktop.jpg');
+	}
+
+	.homepage__container-inner {
+		/* padding-bottom: max(6em, 20vh);
+		align-items: end; */
+
+		flex-direction: row;
+		justify-content: space-between;
+		text-align: left;
+		max-width: 72vw;
+		gap: 1em;
 	}
 }

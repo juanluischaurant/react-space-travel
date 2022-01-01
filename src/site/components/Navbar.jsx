@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Navbar.css'
 import Hamburger from 'hamburger-react'
 import {NavLink} from 'react-router-dom'
-// import { ReactComponentElement as Logo } from '../../../public/assets/shared/logo1.svg'
+// import { ReactComponentElement as Logo } from '/./assets/shared/logo1.svg'
 // import {ReactComponent as MyLogo } from '../../../public/assets/shared/Logo.svg'
 
 const Navbar = () => {
@@ -13,7 +13,9 @@ const Navbar = () => {
       
       <div>
         {/* <MyLogo/> */}
-        <div>Logo</div>
+        <div>
+          <img src="/assets/favicon-32x32.png" alt="" />
+        </div>
       </div>
 
       <nav className='nav-container'>
