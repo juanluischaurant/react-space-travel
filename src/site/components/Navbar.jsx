@@ -53,7 +53,6 @@ const Navbar = () => {
             <NavLink className="ff-sans-cond uppercase text-white letter-spacing-2"
             to='/technology'
             >
-              
               <span>03</span>Technology
             </NavLink>
           </li>
@@ -69,17 +68,38 @@ const Navbar = () => {
 
       <div className={`${isOpen?'':'responsive-menu--opened'} responsive-menu`}>
         <ul>
-          <li className="active">
-            <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="#"><span>00</span>Home</a>
+          <li>
+            <NavLink
+              activeClassName="active"
+              className={`ff-sans-cond uppercase text-white letter-spacing-2`}
+              to='/' 
+              >
+              <span>00</span>Home
+            </NavLink>
           </li>
           <li>
-            <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="#"><span>01</span>Destination</a>
+            <NavLink 
+              activeClassName="active"
+              className={`ff-sans-cond uppercase text-white letter-spacing-2`}
+              to='/destinations'
+            >
+              <span>01</span>Destination
+            </NavLink>
           </li>
           <li>
-            <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="#"><span>02</span>Crew</a>
+            <NavLink 
+              className="ff-sans-cond uppercase text-white letter-spacing-2"
+              to='/crew'
+            >
+              <span>02</span>Crew
+            </NavLink>
           </li>
           <li>
-            <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="#"><span>03</span>Technology</a>
+            <NavLink className="ff-sans-cond uppercase text-white letter-spacing-2"
+              to='/technology'
+              >
+              <span>03</span>Technology
+            </NavLink>
           </li>
 
         </ul>

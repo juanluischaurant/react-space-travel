@@ -26,6 +26,9 @@
 	width: 100%;
 	justify-content: center;
 }
+.crew-container--title h1 {
+	font-size: var(--fs-400);
+}
 .crew-container--title h1 span {
 	margin-right: 0.5em;
 	font-weight: 700;
@@ -41,6 +44,7 @@
 .crew-container--content img {
 	border-bottom: 1px solid hsl(var(--clr-white) / 0.1);
 	order: 1;
+	width: 80%;
 }
 .crew-container--content .crew-container--body {
 	display: flex;

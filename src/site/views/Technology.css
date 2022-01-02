@@ -9,12 +9,12 @@
 }
 
 .technology-container--inner {
+	max-height: 80%;
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	align-self: center;
-	height: 80%;
-	align-self: flex-end;
 	gap: 2rem;
 }
 
@@ -22,6 +22,11 @@
 	width: 100%;
 	display: flex;
 	justify-content: center;
+}
+
+.technology-container--title h1 span {
+	color: hsl(var(--clr-white) / 0.25);
+	font-weight: 800;
 }
 
 .technology-container--inner .technology-container--body {
@@ -91,28 +96,44 @@
 	}
 	.technology-container--title {
 		justify-content: flex-start;
+		padding-left: 8%;
 	}
 }
 
-@media (min-width: 45em) {
+@media (min-width: 45em) and (orientation: landscape) {
 	.technology-container {
+		width: 100vw;
 		background-position: bottom center; /* Center the image */
 		background-repeat: no-repeat; /* Do not repeat the image */
 		background-size: cover; /* Resize the background image to cover the entire container */
 		background-image: url('../../../public/assets/technology/background-technology-desktop.jpg');
 	}
-	.technology-container--inner .technology-container--body {
-		flex-direction: row;
+
+	.technology-container--inner {
+		/* align-self: center; */
+		width: 100%;
 	}
-	.technology-container--body img {
+	.technology-container--inner .technology-container--title h1 {
+		font-size: var(--fs-400);
+	}
+	.technology-container--inner .technology-container--body {
+		max-width: 90%;
+		flex-direction: row;
+		justify-content: space-between;
+		align-self: flex-end;
+	}
+	.technology-container--inner .technology-container--body img {
 		order: 2;
-		width: 40%;
+		aspect-ratio: 1;
+		width: 70%;
 	}
 
 	.technology-container--body .technology-container--content {
+		width: 100%;
 		flex-direction: row;
 		align-items: flex-start;
 		order: 1;
+		gap: 2em;
 	}
 	.numbers-indicators--container {
 		flex-direction: column;
@@ -120,8 +141,13 @@
 	.technology-details {
 		align-items: flex-start;
 		text-align: left;
+		max-width: 55ch;
 	}
-	.technology-details p {
-		max-width: 130ch;
+	.technology-details h2 {
+		min-width: 66ch;
+	}
+	.technology-details > p {
+		max-width: 45ch;
+		/* max-height: 40ch; */
 	}
 }

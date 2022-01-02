@@ -11,7 +11,7 @@ const Technology = () => {
 
   useEffect(()=>{
     const checkMediaQuery = ()=> {
-      const media = window.matchMedia('(min-width: 45em)')
+      const media = window.matchMedia('(min-width: 45em) and (orientation: landscape)')
       // media.matches ? console.log(media.matches): console.log(matches)
       if (media.matches) {
         /* La pantalla tiene al menos min-width píxeles de ancho */

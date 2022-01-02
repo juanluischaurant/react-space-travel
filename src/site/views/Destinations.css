@@ -40,8 +40,8 @@
 	font-weight: 800;
 }
 
-img {
-	width: 70%;
+.destination-header img {
+	width: 60%;
 }
 
 .destination-body {
@@ -98,6 +98,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	gap: 0.5rem;
 }
 
 @media (min-width: 35em) {
@@ -116,7 +117,7 @@ img {
 	}
 }
 
-@media (min-width: 45em) {
+@media (min-width: 45em) and (orientation: landscape) {
 	.destination-container {
 		background-image: url('../../../public/assets/destination/background-destination-desktop.jpg');
 	}
