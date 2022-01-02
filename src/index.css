@@ -293,7 +293,7 @@ body {
 	transform: scale(1.5);
 }
 
-@media (min-width: 45em) {
+@media (min-width: 45em) and (orientation: landscape) {
 	.large-button--container {
 		display: flex;
 		justify-content: flex-end;

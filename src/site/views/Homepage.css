@@ -27,7 +27,7 @@
 	}
 }
 
-@media (min-width: 45em) {
+@media (min-width: 45em) and (orientation: landscape) {
 	.homepage__container {
 		background-image: url('../../../public/assets/home/background-home-desktop.jpg');
 	}

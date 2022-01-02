@@ -109,14 +109,17 @@
 	}
 	.crew-container--inner {
 		margin: auto auto 0 auto;
+		max-width: 70vw;
+		height: 80%;
 	}
 	.crew-container--content {
 		width: 100%;
 		flex-direction: row;
+		justify-content: space-between;
 		gap: 4rem;
 	}
 	.crew-container--content img {
-		width: 50%;
+		width: 52%;
 		align-self: flex-end;
 		/* flex: 1; */
 	}
